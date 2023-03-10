@@ -75,6 +75,8 @@ body {
 
 .accordion__item-content {
     transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .accordion__item-content img {
@@ -84,9 +86,9 @@ body {
     margin-inline: auto;
 }
 
-.accordion__item-content:hover  img {
+.accordion__item-content:hover img {
     opacity: 0.85;
-    box-shadow: rgb(224, 249, 2) 3px 3px 30px ;
+    box-shadow: rgb(224, 249, 2) 3px 3px 30px;
 }
 
 .accordion__item-title:hover {
@@ -113,7 +115,8 @@ body {
     color: var(--color-sea);
 }
 
-.label-tab:not(:has(input:checked)) .accordion__item-content {
+.label-tab:not(:has(input:checked)) .accordion__item-content,
+.label-tab:not(:has(input:checked)) .accordion__item-content img {
     height: 0;
     transform: scale(0);
 }
@@ -123,29 +126,16 @@ body {
     transform: scale(1);
 }
 
-.label-tab:not(:has(input:checked)) .accordion__item-content img {
-    height: 0;
-    transform: scale(0);
-}
-
-.label-tab:has(input:checked) .accordion__item-content img {
-    height: 100%;
-    transform: scale(1);
-}
-
-.label-tab:hover .accordion__item .accordion__item-content {
-    height: 100%;
-    transform: scale(1);
-}
-
+.label-tab:has(input:checked) .accordion__item-content img,
+.label-tab:hover .accordion__item .accordion__item-content,
 .label-tab:hover .accordion__item .accordion__item-content img {
-    height: 100%;
     transform: scale(1);
+    height: 100%;
 }
 
 .label-tab:active {
-    background-color: var(--color-nefrit);
     transform: scale(1.05);
+    background-color: var(--color-nefrit);
 }
 
 .label-tab:active .accordion__item .accordion__item-title {
