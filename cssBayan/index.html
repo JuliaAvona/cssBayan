@@ -12,49 +12,69 @@
 
 <body>
     <div class="container">
-        <h1>Study at The RS School</h1>
-        <hr>
-        <div class="mem-section">
-            <details open>
-                <summary class="summary">
-                    Stage 0
-                    <div class="summary__img">
-                </summary>
-                <hr>
-                <img class="mem__img" src="./accets/1.gif" alt="mem1">
-            </details>
-            <details>
-                <summary class="summary">
-                    Stage 1
-                    <div class="summary__img">
-                </summary>
-                <hr>
-                <img class="mem__img" src="./accets/2.gif" alt="mem2">
-            </details>
-            <details>
-                <summary class="summary">
-                    Stage 2
-                    <div class="summary__img">
-                </summary>
-                <hr>
-                <img class="mem__img" src="./accets/3.gif" alt="mem3">
-            </details>
-            <details>
-                <summary class="summary">
-                    React/Angular
-                    <div class="summary__img">
-                </summary>
-                <hr>
-                <img class="mem__img" src="./accets/4.gif" alt="mem4">
-            </details>
-            <details>
-                <summary class="summary">
-                    Trying to get a job
-                    <div class="summary__img">
-                </summary>
-                <hr>
-                <img class="mem__img" src="./accets/5.gif" alt="mem5">
-            </details>
+        <div class="accordion">
+            <h1 class="accordion__title">Study at <br>The RS School</h1>
+
+            <label class="label-tab" for="first-tab">
+                <input type="radio" name="tab" id="first-tab" checked>
+                <div class="accordion__item">
+                    <div class="accordion__item-title">
+                        <p>Stage 0</p><i class="accordion__item-icon"></i>
+                    </div>
+                    <div class="accordion__item-content">
+                        <img src="./accets/1.gif" alt="Stage-0-mem">
+                    </div>
+                </div>
+            </label>
+
+            <label class="label-tab" for="second-tab">
+                <input type="radio" name="tab" id="second-tab">
+                <div class="accordion__item">
+                    <div class="accordion__item-title">
+                        <p>Stage 1</p><i class="accordion__item-icon"></i>
+                    </div>
+                    <div class="accordion__item-content">
+                        <img src="./accets/2.gif" alt="Stage-1-mem">
+                    </div>
+                </div>
+            </label>
+
+            <label class="label-tab" for="third-tab">
+                <input type="radio" name="tab" id="third-tab">
+                <div class="accordion__item">
+                    <div class="accordion__item-title">
+                        <p>Stage 2</p><i class="accordion__item-icon"></i>
+                    </div>
+                    <div class="accordion__item-content">
+                        <img src="./accets/3.gif" alt="Stage-2-mem">
+                    </div>
+                </div>
+            </label>
+
+            <label class="label-tab" for="fourth-tab">
+                <input type="radio" name="tab" id="fourth-tab">
+                <div class="accordion__item">
+                    <div class="accordion__item-title">
+                        <p>React/Angular</p><i class="accordion__item-icon"></i>
+                    </div>
+                    <div class="accordion__item-content">
+                        <img src="./accets/4.gif" alt="Stage-3-mem">
+                    </div>
+                </div>
+            </label>
+
+            <label class="label-tab" for="fifth-tab">
+                <input type="radio" name="tab" id="fifth-tab">
+                <div class="accordion__item">
+                    <div class="accordion__item-title">
+                        <p>Trying to get a job</p><i class="accordion__item-icon"></i>
+                    </div>
+                    <div class="accordion__item-content">
+                        <img src="./accets/5.gif" alt="get-a-job-mem">
+                    </div>
+                </div>
+            </label>
+
         </div>
     </div>
 </body>
