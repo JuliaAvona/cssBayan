@@ -170,3 +170,22 @@ body {
         cursor: auto;
     }
 }
+
+@media (hover: hover) {
+    .accordion__item-content:hover img {
+        opacity: 0.85;
+        box-shadow: rgb(233, 255, 42) 3px 3px 30px;
+    }
+    
+    .accordion__item-title:hover {
+        color: rgba(55, 55, 252, 0.962);
+    }
+    
+    .accordion:hover * {
+        cursor: pointer;
+    }
+    
+    .accordion:hover .accordion__item {
+        color: var(--color-nefrit);
+    }
+  }
