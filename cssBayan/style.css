@@ -75,8 +75,8 @@ body {
 
 .accordion__item-content {
     transition: all 0.3s ease-in-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .accordion__item-content img {
