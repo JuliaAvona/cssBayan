@@ -181,10 +181,6 @@ body {
         color: rgba(55, 55, 252, 0.962);
     }
     
-    .accordion:hover * {
-        cursor: pointer;
-    }
-    
     .accordion:hover .accordion__item {
         color: var(--color-nefrit);
     }
